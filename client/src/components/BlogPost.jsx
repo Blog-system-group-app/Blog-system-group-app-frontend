@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import CommentSection from './CommentSection';
+import CommentSection from './Section';
 
 const BlogPost = ({ post, onUpdate, onDelete }) => {
   const [isEditing, setIsEditing] = useState(false);
