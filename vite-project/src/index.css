@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Blog Form Styles */
 .blog-form-container {
   background-color: #ffffff;
   padding: 25px;
@@ -67,14 +66,14 @@
   cursor: not-allowed;
 }
 
-/* Blog List Styles */
+
 .blog-list-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-/* Blog Post Styles */
+
 .blog-post {
   background-color: #ffffff;
   padding: 1.5rem;
@@ -187,7 +186,7 @@
   font-size: 0.875rem;
 }
 
-/* Comment Section Styles */
+
 .comment-container {
   background-color: #f9fafb;
   padding: 1rem;
