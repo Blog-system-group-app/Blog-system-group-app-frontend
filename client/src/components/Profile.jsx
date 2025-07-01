@@ -5,7 +5,7 @@ const Profile = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
+  [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetchProfile();
@@ -58,13 +58,13 @@ const Profile = () => {
     }
   };
 
-  if (!profile) return <div className="text-center">Loading...</div>;
+  if (!profile) return <div className="loading-message">Loading...</div>;
 
   return (
-    <section className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4 text-center">Profile</h2>
+    <section className="auth-container">
+      <h2 className="auth-heading">Profile</h2>
       {error && <div className="blog-post-error" role="alert">{error}</div>}
-      <div className="flex flex-col gap-4">
+      <div className="auth-fields">
         <input
           type="text"
           value={username}

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -166,17 +165,17 @@ const App = () => {
 
   return (
     <Router>
-      <div className="min-h-screen bg-gray-100">
+      <div className="app-container">
         <Navbar isAuthenticated={isAuthenticated} handleLogout={handleLogout} onSearch={handleSearch} />
-        <main className="container mx-auto p-6 max-w-4xl">
+        <main className="main-content">
           {error && (
-            <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-6 rounded" role="alert">
+            <div className="blog-post-error" role="alert">
               {error}
             </div>
           )}
           {loading && (
-            <div className="text-center mb-6">
-              <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500" aria-label="Loading"></div>
+            <div className="loading-container">
+              <div className="loading-spinner" aria-label="Loading"></div>
             </div>
           )}
           <Routes>

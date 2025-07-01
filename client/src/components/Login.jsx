@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 const Login = ({ setIsAuthenticated }) => {
@@ -31,10 +30,10 @@ const Login = ({ setIsAuthenticated }) => {
   };
 
   return (
-    <section className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
+    <section className="auth-container">
+      <h2 className="auth-heading">Login</h2>
       {error && <div className="blog-post-error" role="alert">{error}</div>}
-      <div className="flex flex-col gap-4">
+      <div className="auth-fields">
         <input
           type="text"
           placeholder="Username"
